@@ -1,0 +1,28 @@
+.weather-panel {
+  background-image: url(https://unsplash.it/600/400?image=1043&blur);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: 25px 25px 40px 0px rgba(0, 0, 0, 0.33);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+.main-container div{
+  margin-top: 30px;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+<div class="main-container">
+  <div class="form">
+    <h1>Welcome {{user?.name}}!</h1>
+    <h2>Enter location name </h2>
+    <input type="text" [(ngModel)]="location"><br><br>
+    <button (click)="getWeatherData(location)">Submit</button>
+  </div>
+  <div class="weather-panel">
+    <div *ngIf="weather.current">
+      <h2>{{weather?.location?.name || ""}}<br><small>{{weather.location?.localtime || ''}}</small></h2>
+      <p>Temperature: {{weather.current?.temperature}}°Celius</p>
+      <p>Weather: {{weather.current?.weather_descriptions}}</p>
+    </div>
+  </div>
+</div>
